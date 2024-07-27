@@ -1,0 +1,19 @@
+{
+  "name": "cryptid_spot_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "prestart": "cd client && npm run build",
+    "start": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,21 @@
+body {
+  background-color: #002D04;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  max-width: 20%;
+}
+
+nav button {
+  padding: 5px;
+  margin: 5px;
+}
+
+header {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #d6cdb7;
+}
