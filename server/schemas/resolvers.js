@@ -3,7 +3,10 @@ const { Spotter, Cryptid, Sighting } = require('../models')
 const resolvers = {
     Query: {
         sightings: async () => {
-            return Sighting.find().populate('spotter').populate('cryptid')
+            console.log('Success')
+            const sightings = await Sighting.find().populate('spotter').populate('cryptid')
+            console.log(sightings)
+            return sightings
         },
         sighting: async (parent, { sightingId }) => {
             return Sighting.findById({ _id: sightingId })

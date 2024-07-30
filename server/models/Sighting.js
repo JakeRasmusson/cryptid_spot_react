@@ -2,18 +2,12 @@ const { Schema, model } = require('mongoose')
 
 const sightingSchema = new Schema({
     spotter: {
-        type: 
-            {
                 type: Schema.Types.ObjectId,
                 ref: 'Spotter'
-            },
     },
     cryptid: {
-        type: 
-            {
                 type: Schema.Types.ObjectId,
                 ref: 'Cryptid'
-            },
     },
     lat: {
         type: Number,

@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
-
+import Home from './pages/Home.jsx'
 import App from './App.jsx'
 import './index.css'
 
@@ -16,7 +16,12 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     errorElement: <Error / >,
-    children: []
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      }
+    ]
   }
 ])
 
